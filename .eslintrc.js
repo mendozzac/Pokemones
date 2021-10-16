@@ -9,6 +9,7 @@ module.exports = {
     sourceType: "module",
     requireConfigFile: false,
   },
+  parser: "@babel/eslint-parser",
   rules: {
     "no-param-reassign": "off",
     "no-plusplus": "off",
@@ -16,7 +17,7 @@ module.exports = {
     "consistent-return": "off",
     "no-debugger": "off",
     "no-console": "off",
-    "line-between-class-member": "off",
+    "lines-between-class-members": "off",
     "class-methods-use-this": "off",
     "import/extensions": "off",
   },
