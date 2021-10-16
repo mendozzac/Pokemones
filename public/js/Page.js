@@ -27,6 +27,5 @@ class Page extends Component {
     this.element.innerHTML = html;
   }
 }
-console.log(Page);
 
 export default Page;
