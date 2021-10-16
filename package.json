@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll --collect-coverage"
+    "test": "jest --watchAll --collect-coverage",
+    "start": "sass --watch ./src/styles.scss ./public/css/styles.css"
   },
   "author": "",
   "license": "ISC",
