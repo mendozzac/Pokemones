@@ -1,4 +1,4 @@
-import Component from "./Component.js";
+import Component from "../Component/Component.js";
 
 class Header extends Component {
   constructor(parentElement) {
