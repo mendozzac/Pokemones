@@ -8,6 +8,10 @@ body {
   color: rgb(26, 22, 22);
 }
 
+li {
+  list-style: none;
+}
+
 .header {
   display: flex;
   justify-content: space-evenly;
@@ -30,7 +34,6 @@ body {
     justify-content: space-between;
   }
   &__element {
-    list-style: none;
     font-size: 18px;
     font-weight: 200;
     margin-left: 25px;
