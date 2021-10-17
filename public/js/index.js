@@ -3,6 +3,7 @@ import Page from "./PageComponent/Page.js";
 import PokemonCard from "./PokemonCard/PokemonCard.js";
 import Service from "./Service.js";
 
+const pokeService = new Service();
 const header = document.querySelector("body");
 const aCommonSingleHeader = new Header(header);
 
@@ -12,14 +13,12 @@ const aCommonSinglePage = new Page(content);
 const card = document.querySelector(".main-box");
 const pokemonCard = new PokemonCard(card, "", "");
 
-const pokeService = new Service();
-
 (async () => {
-  this.pokemonService = new Service();
-  const pokemonElements = await this.pokemonService.getPokemonList();
-  this.pokemons = pokemonElements.results;
-  const pokemones = this.pokemons.map(
+  pokemonService = new Service();
+  const pokemonElements = await pokemonService.getPokemonList();
+  pokemons = pokemonElements.results;
+  const pokemones = pokemons.map(
     (pokemon) =>
-      new PokemonCard(this.element.querySelector(".main-box"), pokemon.url)
+      new PokemonCard(element.querySelector(".main-box"), pokemon.url)
   );
 })();
